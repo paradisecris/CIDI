@@ -34,7 +34,7 @@ require("navbar.php");
   <div class="container">
 	<form method="POST" action="examen1.php">
   <div class="form-group">
-  	<input type="hidden" name="id_user" value=<?php echo $_SESSION['id']?>>
+  	<input type="hidden" name="user" value=<?php echo $_SESSION['id']?>>
   	<div class="form-group col-md-6">
       <b><label for="pregunta1">¿Con que nombre te identificas?</label></b>
       <input type="text" class="form-control" id="pregunta1" name="pregunta1" maxlength="30" required >

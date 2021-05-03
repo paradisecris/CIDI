@@ -2,7 +2,7 @@
 require("connect_db.php");
 ?>
 <?php
-	$id_user=$_POST['id_user'];
+	$id_user=$_POST['user'];
 	$pregunta1=$_POST['pregunta1'];
 	$pregunta2=$_POST['pregunta2'];
 	$pregunta3_1=$_POST['pregunta3_1'];
