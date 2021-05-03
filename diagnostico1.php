@@ -37,7 +37,7 @@ require("navbar.php");
   	
   	<div class="form-group col-md-6">
       <b><label for="pregunta1">¿Con que nombre te identificas?</label></b>
-      <input type="text" class="form-control" id="pregunta1" name="pregunta1" maxlength="30" onkeypress="return check(event)" required >
+      <input type="text" class="form-control" id="pregunta1" name="pregunta1" maxlength="30" required >
 
     </div>
     <div class="form-group col-md-6">
@@ -123,78 +123,140 @@ require("navbar.php");
       </div>
       <div class="form-group col-md-6">
         <b><label for="pregunta6">Relaciona las palabras con los conceptos</label><br></b>
-        <label for="pregunta6_1">Sexo</label>
+        <label for="pregunta6_1">Macho</label>
           <select name="pregunta6_1" class="form-control">
                         <option value="" selected></option>
-                        <option value="Macho" >Macho</option>
-                        <option value="Hembra">Hembra</option>
-                        <option value="Masculino" >Masculino</option>
-                        <option value="Femenino">Femenino</option>
-                        <option value="Hombre">Hombre</option>
-                        <option value="Mujer">Mujer</option>
-                        <option value="Pene">Pene</option>
-                        <option value="Vulva">Vulva</option>
-                        <option value="Intersexualidad" >Intersexualidad</option>
-                        <option value="Vestidos">Vestidos</option>
-                        <option value="Traje" >Traje</option>
-                        <option value="Pantalón">Pantalón</option>                                 
-            </select>
-        <label for="pregunta6_2">Género</label>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+          </select>
+          <label for="pregunta6_2">Hembra</label>
             <select name="pregunta6_2" class="form-control">
                         <option value="" selected></option>
-                        <option value="Macho" >Macho</option>
-                        <option value="Hembra">Hembra</option>
-                        <option value="Masculino" >Masculino</option>
-                        <option value="Femenino">Femenino</option>
-                        <option value="Hombre">Hombre</option>
-                        <option value="Mujer">Mujer</option>
-                        <option value="Pene">Pene</option>
-                        <option value="Vulva">Vulva</option>
-                        <option value="Intersexualidad" >Intersexualidad</option>
-                        <option value="Vestidos">Vestidos</option>
-                        <option value="Traje" >Traje</option>
-                        <option value="Pantalón">Pantalón</option>
-            </select>
-        <label for="pregunta6_3">Identidad</label>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+          </select>
+          <label for="pregunta6_3">Masculino</label>
             <select name="pregunta6_3" class="form-control">
                         <option value="" selected></option>
-                        <option value="Macho" >Macho</option>
-                        <option value="Hembra">Hembra</option>
-                        <option value="Masculino" >Masculino</option>
-                        <option value="Femenino">Femenino</option>
-                        <option value="Hombre">Hombre</option>
-                        <option value="Mujer">Mujer</option>
-                        <option value="Pene">Pene</option>
-                        <option value="Vulva">Vulva</option>
-                        <option value="Intersexualidad" >Intersexualidad</option>
-                        <option value="Vestidos">Vestidos</option>
-                        <option value="Traje" >Traje</option>
-                        <option value="Pantalón">Pantalón</option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
             </select>
-        <label for="pregunta6_4">Expresión de Género</label>
+          <label for="pregunta6_4">Femenino</label>
             <select name="pregunta6_4" class="form-control">
                         <option value="" selected></option>
-                        <option value="Macho" >Macho</option>
-                        <option value="Hembra">Hembra</option>
-                        <option value="Masculino" >Masculino</option>
-                        <option value="Femenino">Femenino</option>
-                        <option value="Hombre">Hombre</option>
-                        <option value="Mujer">Mujer</option>
-                        <option value="Pene">Pene</option>
-                        <option value="Vulva">Vulva</option>
-                        <option value="Intersexualidad" >Intersexualidad</option>
-                        <option value="Vestidos">Vestidos</option>
-                        <option value="Traje" >Traje</option>
-                        <option value="Pantalón">Pantalón</option>
-            </select>
-
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+             </select> 
+          <label for="pregunta6_5">Hombre</label>
+            <select name="pregunta6_5" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+            </select> 
+          <label for="pregunta6_6">Mujer</label>
+            <select name="pregunta6_6" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+            </select>      
+          <label for="pregunta6_7">Pene</label>
+            <select name="pregunta6_7" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+            </select>   
+          <label for="pregunta6_8">Vulva</label>
+             <select name="pregunta6_8" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+              </select>   
+            <label for="pregunta6_9">Intersexualidad</label>
+                <select name="pregunta6_9" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+                </select>     
+            <label for="pregunta6_10">Vestidos</label>
+                <select name="pregunta6_10" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+                </select>  
+            <label for="pregunta6_11">Traje</label>
+                <select name="pregunta6_11" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+                </select>     
+            <label for="pregunta6_12">Pantalón</label>
+                <select name="pregunta6_12" class="form-control">
+                        <option value="" selected></option>
+                        <option value="Sexo" >Sexo</option>
+                        <option value="Género">Género</option>
+                        <option value="Identidad" >Identidad</option>
+                        <option value="Expresión de Género">Expresión de Género</option> 
+                </select>        
         </div>
+        <div class="form-group col-md-6">
+        <b><label for="pregunta7">¿Describe lo que significa cada una de las letras del acrónimo LGBTTTI+?</label></b>
+        <input type="text" class="form-control" id="pregunta7" name="pregunta7" maxlength="150" required >
+        </div>
+        <div class="form-group col-md-6">
+        <b><label for="pregunta8">¿Cómo expresas socialmente tu género?</label></b>
+        <input type="text" class="form-control" id="pregunta8" name="pregunta8" maxlength="150" required >
+        </div>
+        <div class="form-group col-md-6">
+          <b><label for="pregunta9">¿Sabes que es el PIN PARENTAL? ¿Has escuchado de esta movilización social en México o en algún otro país?</label></b>
+            <select name="pregunta9" class="form-control">
+                          <option value="" selected></option>
+                          <option value="Si">Si</option>
+                          <option value="No">No</option>
+                          <option value="Tal vez">Tal vez</option>
+                          <option value="Otros">Otros</option>
+                          
+              </select>
+          </div>
+          <div class="form-group col-md-6">
+            <b><label for="pregunta10">¿Qué es sexo y cuantos conoces? </label></b>
+            <input type="text" class="form-control" id="pregunta10" name="pregunta10" maxlength="150" required >
+          </div>
+          <div class="form-group col-md-6">
+            <b><label for="pregunta11">¿Qué opinas de la frase no se nace  mujer, se llega  serlo?</label></b>
+            <input type="text" class="form-control" id="pregunta11" name="pregunta11" maxlength="150" required >
+          </div>
+          <div class="form-group col-md-6">
+            <b><label for="pregunta12">¿Cuál es tu orientación sexual?</label></b>
+            <input type="text" class="form-control" id="pregunta12" name="pregunta12" maxlength="150" required >
+          </div>
     
   </div>
   <!-- <div class="form-group">
    <div class="g-recaptcha" data-sitekey="6LdRbtgUAAAAADY_eJQwBXHSY25YJ9-BYaoTLE6M"></div>
   </div>-->
-  <button type="submit" name="submit" class="btn btn-outline-dark">Registrar</button>
+  <button type="submit" name="submit" class="btn btn-outline-dark">Enviar</button>
 </form>
 </div>
 </div>
