@@ -37,7 +37,7 @@ require("navbar.php");
     extract($_GET);
     require("connect_db.php");
 
-    $query = "SELECT * FROM diagnostico1 where id_user=5";
+    $query = "SELECT * FROM diagnostico1 where id_user=$id";
     $result = mysqli_query($mysqli,$query);
     while ($resp = $result->fetch_assoc()){
     
