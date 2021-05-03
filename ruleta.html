@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorteo</title>
+	<link rel="stylesheet" type="text/css" href="css\ruleta.css">
+	 <meta charset="utf-8">
+	
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Ruleta</h1>
+		<hr><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reglas">
+  Como jugar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="reglas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reglas</h5>
+      </div>
+      <div class="modal-body">
+        1.	Se dividirá el grupo en equipos de 4 a 5 personas<br>
+		2.	Se les proporcionarán 10 fichas a cada participante<br>
+		3.	Deberán tomar turnos para girar la pirinola<br>
+		4.	Cada participante colocará 2 fichas en el centro<br>
+		5.	Iniciará el juego, una vez que el primer participante gire la pirinola<br>
+		6.	Cuando la pirinola deje de girar, el participante deberá tomar la tarjeta que tenga a su reverso la misma imagen <br>
+		7.	Una vez tomada la tarjeta, deberá ser leída en voz alta<br>
+		8.	Los participantes reflexionaran las acciones que menciona la tarjeta y colocar o retirar la cantidad de fichas que se indica en la misma tarjeta <br>
+		9.	Al terminarse las tarjetas o las fichas de algún participante, el juego habrá terminado, por lo que ganará el participante con más cantidad de fichas<br>
+		10.	La persona que gane será quien obtuvo mayor apoyo en contra de la violencia homo, lesbo, bi transfóbico<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+		<div class="concursantes">
+			<canvas id="idcanvas" width="850" height="850"></canvas>
+			<br>
+			<button onclick="sortear()"><span id="idestado">Sortear</span></button>
+			<div class="mark-winner"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const array_concursantes=
+		[
+			
+			'Todos te ignoran, pierdes tu siguiente turno(todos ponen)'
+			,'Tienes apoyo de una asociación, tira nuevamente(toma 3)'
+			,'Dile a tus amigos que eres Gay/Lesbiana/Trans(toma 2)'
+			,'Todos te dicen un insulto (todos ponen)'
+			,'Eres hombre, te gusta llevar accesorios de mujer y te dicen Maricon(Pon 1)'
+			,'Dale un beso a la persona de la derecha sin importar su sexo(Toma 2)'
+			,'Quedas aislado, pierdes tu un turno(Pon 3)'
+			,'No puedes hablar hasta tu siguiente turno(Pon 2)'
+			,'Por ser LGBT te despiden de tu trabajo, pierdes dos turnos(Pon 1)'
+			,'Estas enfermo,te niegan la atención médica, pierdes turno(Pon 1)'
+			,'Eres mujer, juegas futbol y no te lo permiten porque es juego de hombres(Pon 1)'
+			,'Por el aislamiento piensas debes morir, te suicidas, pierdes un turno(Pon 3)'
+			,'Tu amigo te apoya, tienes un tiro extra(Toma 3)'
+			,'Denuncia a tu agresor(Toma 2)'
+			,'Todos te dan un sape(Todos ponen)'
+			
+		];
+
+		let canvas=document.getElementById("idcanvas");
+		let context=canvas.getContext("2d");
+		let center=canvas.width/2;
+
+		context.beginPath();
+		context.moveTo(center,center);
+		context.arc(center,center,center,0, 2*Math.PI);
+		context.lineTo(center,center);
+		context.fillStyle ='#33333333';
+		context.fill();
+
+		context.beginPath();
+		context.moveTo(center,center);
+		context.arc(center,center,center-10,0, 2*Math.PI);
+		context.lineTo(center,center);
+		context.fillStyle ='black';
+		context.fill();
+
+		for (var i = 0; i < array_concursantes.length; i++) {
+			context.beginPath();
+			context.moveTo(center,center);
+			context.arc(center,center,center-20,i*2*Math.PI/array_concursantes.length, (i+1)*2*Math.PI/array_concursantes.length);
+			context.lineTo(center,center);
+			context.fillStyle =random_color();
+			context.fill();
+
+			context.save();
+			context.translate(center, center);
+			context.rotate(3*2*Math.PI/(5*array_concursantes.length)+i*2*Math.PI/array_concursantes.length);
+			context.translate(-center, -center);
+			context.font = "10px Comic Sans MS";
+			context.textAlign = "right";
+			context.fillStyle = "white";
+			context.fillText(array_concursantes[i], canvas.width-30, center);
+			context.restore();
+		}
+
+		let pos_ini=0;
+		let clic=0;
+		let movement;
+		function sortear(){
+			if (clic==0) {
+				let canvas=document.getElementById("idcanvas");
+				movement=setInterval(function(){
+					pos_ini+=10;
+					canvas.style.transform='rotate('+pos_ini+'deg)';
+				},10);
+				clic=1;
+				document.getElementById("idestado").innerHTML="Detener";
+			}else{
+				clearInterval(movement);
+				clic=0;
+				document.getElementById("idestado").innerHTML="Sortear";
+			}
+		}
+
+		function random_color(){
+			let ar_digit=['2','3','4','5','6','7','8','9'];
+			let color='';
+			let i=0;
+			while(i<6){
+				let pos=Math.round(Math.random()*(ar_digit.length-1));
+				color=color+''+ar_digit[pos];
+				i++;
+			}
+			return '#'+color;
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+</html>
