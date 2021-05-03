@@ -34,7 +34,7 @@ require("navbar.php");
   <div class="container">
 	<form method="POST" action="examen1.php">
   <div class="form-group">
-  	
+  	<input type="hidden" name="id_user" value=<?php echo $_SESSION['id']?>>
   	<div class="form-group col-md-6">
       <b><label for="pregunta1">¿Con que nombre te identificas?</label></b>
       <input type="text" class="form-control" id="pregunta1" name="pregunta1" maxlength="30" required >
@@ -57,7 +57,7 @@ require("navbar.php");
     </div>
     <div class="form-group col-md-6">
       <b><label for="pregunta3">Asigna a cada letra del acrónimo LGBTTTI+ el concepto que le define y permite su existencia jurídica en la Constitución de la Ciudad de México ¿Describe lo que significa cada una de las letras del acrónimo LGBTTTI+?</label></b>
-      <label for="pregunta3_1">Orientacioón sexual</label></b>
+      <label for="pregunta3_1">Orientación sexual</label></b>
         <select name="pregunta3_1" class="form-control">
                       <option value="" selected></option>
                       <option value="Lesbiana">Lesbiana</option>
