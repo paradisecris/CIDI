@@ -1,0 +1,41 @@
+<?php
+require("connect_db.php");
+?>
+<?php
+	$id_user=$_POST['user'];
+	$pregunta1=$_POST['pregunta1'];
+	$pregunta1=$_POST['pregunta2'];
+	$pregunta1=$_POST['pregunta3'];
+	$pregunta1=$_POST['pregunta4'];
+	$pregunta1=$_POST['pregunta5'];
+	$pregunta1=$_POST['pregunta6'];
+	$pregunta1=$_POST['pregunta7'];
+	$pregunta1=$_POST['pregunta8'];
+	$pregunta1=$_POST['pregunta9'];
+	$pregunta1=$_POST['pregunta10'];
+	$pregunta1=$_POST['pregunta11'];
+	$pregunta1=$_POST['pregunta12'];
+	$pregunta1=$_POST['pregunta13'];
+	$pregunta1=$_POST['pregunta14'];
+	$pregunta1=$_POST['pregunta15'];
+	$pregunta1=$_POST['pregunta16'];
+	$pregunta1=$_POST['pregunta17'];
+	$pregunta1=$_POST['pregunta18'];
+	$pregunta1=$_POST['pregunta19'];
+
+
+	
+
+
+
+
+
+
+
+
+	
+mysqli_query($mysqli,"INSERT INTO diagnostico2 VALUES('',current_timestamp(),'$id_user','$pregunta1','$pregunta2','$pregunta3','$pregunta4','$pregunta5','$pregunta6','$pregunta7','$pregunta8','$pregunta9','$pregunta10','$pregunta11','$pregunta12','$pregunta13','$pregunta14','$pregunta15','$pregunta16','$pregunta17','$pregunta18','$pregunta19',)");
+echo ' <script language="javascript">alert("Respuestas enviadas con exito");</script> ';
+echo "<script>location.href='curso.php'</script>";
+	
+?>

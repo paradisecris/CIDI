@@ -39,27 +39,27 @@ require("navbar.php");
     <div class="form-group col-md-6">
       <b><label for="pregunta1">Selecciona de esta lista cuales son los derechos de las niñas, niños y adolescentes</label></b>
 
-<label><input type="checkbox" name="pregunta1" value="Derecho a la vida, a la supervivencia y al desarrollo">Derecho a la vida, a la supervivencia y al desarrollo</label><br>
-<label><input type="checkbox" name="pregunta1" value="Derecho de prioridad; Derecho a la identidad"> Derecho de prioridad; Derecho a la identidad</label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a vivir en familia; Derecho a la igualdad sustantiva "> Derecho a vivir en familia; Derecho a la igualdad sustantiva </label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a no ser discriminado"> Derecho a no ser discriminado</label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a votar"> Derecho a votar</label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a vivir en condiciones de bienestar y a un sano desarrollo integral "> Derecho a vivir en condiciones de bienestar y a un sano desarrollo integral </label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a una vida libre de violencia y a la integridad personal"> Derecho a una vida libre de violencia y a la integridad personal</label><br>
+<label><input type="checkbox" name="pregunta1_1" value="Derecho a la vida, a la supervivencia y al desarrollo">Derecho a la vida, a la supervivencia y al desarrollo</label><br>
+<label><input type="checkbox" name="pregunta1_2" value="Derecho de prioridad; Derecho a la identidad"> Derecho de prioridad; Derecho a la identidad</label><br>
+<label><input type="checkbox" name="pregunta1_3" value=" Derecho a vivir en familia; Derecho a la igualdad sustantiva "> Derecho a vivir en familia; Derecho a la igualdad sustantiva </label><br>
+<label><input type="checkbox" name="pregunta1_4" value=" Derecho a no ser discriminado"> Derecho a no ser discriminado</label><br>
+<label><input type="checkbox" name="pregunta1_5" value=" Derecho a votar"> Derecho a votar</label><br>
+<label><input type="checkbox" name="pregunta1_6" value=" Derecho a vivir en condiciones de bienestar y a un sano desarrollo integral "> Derecho a vivir en condiciones de bienestar y a un sano desarrollo integral </label><br>
+<label><input type="checkbox" name="pregunta1_7" value=" Derecho a una vida libre de violencia y a la integridad personal"> Derecho a una vida libre de violencia y a la integridad personal</label><br>
 
-<label><input type="checkbox" name="pregunta1" value=" Derecho a la protección de la salud y a la seguridad social">Derecho a la protección de la salud y a la seguridad social</label><br>
-<label><input type="checkbox" name="pregunta1" value="Derecho a la inclusión de niñas, niños y adolescentes con discapacidad">Derecho a la inclusión de niñas, niños y adolescentes con discapacidad</label><br>
-<label><input type="checkbox" name="pregunta1" value="Derecho a la educación">Derecho a la educación </label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho al descanso y al esparcimiento"> Derecho al descanso y al esparcimiento</label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a la libertad de convicciones éticas, pensamiento, conciencia, religión y cultura ">Derecho a la libertad de convicciones éticas, pensamiento, conciencia, religión y cultura </label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a la libertad de expresión y de acceso a la información"> Derecho a la libertad de expresión y de acceso a la información</label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho de participación"> Derecho de participación</label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho de asociación y reunión ">  Derecho de asociación y reunión  </label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a la intimidad "> Derecho a la intimidad </label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho a la seguridad jurídica y al debido proceso"> Derecho a la seguridad jurídica y al debido proceso</label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derechos de niñas, niños y adolescentes migrantes"> Derechos de niñas, niños y adolescentes migrantes</label><br>
-<label><input type="checkbox" name="pregunta1" value=" Derecho al trabajo">  s) Derecho al trabajo </label><br>
-<label><input type="checkbox" name="pregunta1" value="Todas las anteriores ">Todas las anteriores  </label><br>
+<label><input type="checkbox" name="pregunta1_8" value=" Derecho a la protección de la salud y a la seguridad social">Derecho a la protección de la salud y a la seguridad social</label><br>
+<label><input type="checkbox" name="pregunta1_9" value="Derecho a la inclusión de niñas, niños y adolescentes con discapacidad">Derecho a la inclusión de niñas, niños y adolescentes con discapacidad</label><br>
+<label><input type="checkbox" name="pregunta1_10" value="Derecho a la educación">Derecho a la educación </label><br>
+<label><input type="checkbox" name="pregunta1_11" value=" Derecho al descanso y al esparcimiento"> Derecho al descanso y al esparcimiento</label><br>
+<label><input type="checkbox" name="pregunta1_12" value=" Derecho a la libertad de convicciones éticas, pensamiento, conciencia, religión y cultura ">Derecho a la libertad de convicciones éticas, pensamiento, conciencia, religión y cultura </label><br>
+<label><input type="checkbox" name="pregunta1_13" value=" Derecho a la libertad de expresión y de acceso a la información"> Derecho a la libertad de expresión y de acceso a la información</label><br>
+<label><input type="checkbox" name="pregunta1_14" value=" Derecho de participación"> Derecho de participación</label><br>
+<label><input type="checkbox" name="pregunta1_15" value=" Derecho de asociación y reunión ">  Derecho de asociación y reunión  </label><br>
+<label><input type="checkbox" name="pregunta1_16" value=" Derecho a la intimidad "> Derecho a la intimidad </label><br>
+<label><input type="checkbox" name="pregunta1_17" value=" Derecho a la seguridad jurídica y al debido proceso"> Derecho a la seguridad jurídica y al debido proceso</label><br>
+<label><input type="checkbox" name="pregunta1_18" value=" Derechos de niñas, niños y adolescentes migrantes"> Derechos de niñas, niños y adolescentes migrantes</label><br>
+<label><input type="checkbox" name="pregunta1_19" value=" Derecho al trabajo">  s) Derecho al trabajo </label><br>
+<label><input type="checkbox" name="pregunta1_20" value="Todas las anteriores ">Todas las anteriores  </label><br>
 </div>
 
 
@@ -197,7 +197,7 @@ require("navbar.php");
         <b><label for="pregunta7">¿con qué frases estás de acuerdo o en desacuerdo?</label><br></b>
  
         <label for="pregunta7_1">A veces se dice cosas como “marica” sin pretender ofender a nadie por su orientación sexual </label>
-          <select name="pregunta4_1" class="form-control">
+          <select name="pregunta7_1" class="form-control">
                         <option value="" selected></option>
                         <option value="De acuerdo" >De acuerdo</option>
                         <option value="En desacuerdo">En desacuerdo</option>
@@ -223,8 +223,8 @@ require("navbar.php");
                         
           </select>
 
-          <label for="pregunta7_5">Aunque se digan si pensar las palabras homo, lesbo , biy transfóbicas causan daño y hieren a las personas aludidas  </label>
-          <select name="pregunta7_5" class="form-control">
+          <label for="pregunta7_4">Aunque se digan si pensar las palabras homo, lesbo , biy transfóbicas causan daño y hieren a las personas aludidas  </label>
+          <select name="pregunta7_4" class="form-control">
                         <option value="" selected></option>
                         <option value="De acuerdo" >De acuerdo</option>
                         <option value="En desacuerdo">En desacuerdo</option>
@@ -232,8 +232,8 @@ require("navbar.php");
                         
           </select>
 
-          <label for="pregunta7_6">Si no hay intención homo, lesbo y tranfóbica el lenuaje no denota, fobias, odio infundado o discriminación. </label>
-          <select name="pregunta7_6" class="form-control">
+          <label for="pregunta7_5">Si no hay intención homo, lesbo y tranfóbica el lenuaje no denota, fobias, odio infundado o discriminación. </label>
+          <select name="pregunta7_5" class="form-control">
                         <option value="" selected></option>
                         <option value="De acuerdo" >De acuerdo</option>
                         <option value="En desacuerdo">En desacuerdo</option>
@@ -242,7 +242,17 @@ require("navbar.php");
           </select>
           
 
-          <label for="pregunta7_7">si la escuela permite el lenguaje homo,lesbo o trasnfóbico está facilitando que sus estudiantes deban aguantar bullying e insultos. </label>
+          <label for="pregunta7_6">si la escuela permite el lenguaje homo,lesbo o trasnfóbico está facilitando que sus estudiantes deban aguantar bullying e insultos. </label>
+          <select name="pregunta7_6" class="form-control">
+                        <option value="" selected></option>
+                        <option value="De acuerdo" >De acuerdo</option>
+                        <option value="En desacuerdo">En desacuerdo</option>
+
+                        
+          </select>
+
+
+           <label for="pregunta7_7">Si la escuela pone un alto al lenguaje homo fóbico se crea  un ambiente favorable para el estudiante, su sentido de pertenencia, su autoestima y su logro académico.</label>
           <select name="pregunta7_7" class="form-control">
                         <option value="" selected></option>
                         <option value="De acuerdo" >De acuerdo</option>
@@ -251,8 +261,7 @@ require("navbar.php");
                         
           </select>
 
-
-           <label for="pregunta7_8">Si la escuela pone un alto al lenguaje homo fóbico se crea  un ambiente favorable para el estudiante, su sentido de pertenencia, su autoestima y su logro académico.</label>
+          <label for="pregunta7_8">Si no interviene el personal docente, las expresiones homo, lesbo y transfóbicas irán cada más lejos.</label>
           <select name="pregunta7_8" class="form-control">
                         <option value="" selected></option>
                         <option value="De acuerdo" >De acuerdo</option>
@@ -261,17 +270,8 @@ require("navbar.php");
                         
           </select>
 
-          <label for="pregunta7_9">Si no interviene el personal docente, las expresiones homo, lesbo y transfóbicas irán cada más lejos.</label>
+          <label for="pregunta7_9">No creo que expresiones tan comunes puedan incomodar a alguien.</label>
           <select name="pregunta7_9" class="form-control">
-                        <option value="" selected></option>
-                        <option value="De acuerdo" >De acuerdo</option>
-                        <option value="En desacuerdo">En desacuerdo</option>
-
-                        
-          </select>
-
-          <label for="pregunta7_10">No creo que expresiones tan comunes puedan incomodar a alguien.</label>
-          <select name="pregunta7_10" class="form-control">
                         <option value="" selected></option>
                         <option value="De acuerdo" >De acuerdo</option>
                         <option value="En desacuerdo">En desacuerdo</option>
@@ -280,8 +280,8 @@ require("navbar.php");
           </select>
           
 
-            <label for="pregunta7_11">La burla a través de palabras y ofensas son actos de lenguaje que se enmarcan bajo el concepto de injuria.</label>
-          <select name="pregunta7_11" class="form-control">
+            <label for="pregunta7_10">La burla a través de palabras y ofensas son actos de lenguaje que se enmarcan bajo el concepto de injuria.</label>
+          <select name="pregunta7_10" class="form-control">
                         <option value="" selected></option>
                         <option value="De acuerdo" >De acuerdo</option>
                         <option value="En desacuerdo">En desacuerdo</option>
@@ -289,8 +289,8 @@ require("navbar.php");
                         
           </select>
 
-           <label for="pregunta7_12">El lenguaje homo, lesbo y transfóbico causa traumatismos y pueden truncar las aspiraciones de algún /a estudiante.</label>
-          <select name="pregunta7_12" class="form-control">
+           <label for="pregunta7_11">El lenguaje homo, lesbo y transfóbico causa traumatismos y pueden truncar las aspiraciones de algún /a estudiante.</label>
+          <select name="pregunta7_11" class="form-control">
                         <option value="" selected></option>
                         <option value="De acuerdo" >De acuerdo</option>
                         <option value="En desacuerdo">En desacuerdo</option>
@@ -310,7 +310,7 @@ require("navbar.php");
   <!-- <div class="form-group">
    <div class="g-recaptcha" data-sitekey="6LdRbtgUAAAAADY_eJQwBXHSY25YJ9-BYaoTLE6M"></div>
   </div>-->
-  <button type="submit" name="submit" class="btn btn-outline-dark">Registrar</button>
+  <button type="submit" name="submit" class="btn btn-outline-dark">Enviar</button>
 </form>
 </div>
 </div>
