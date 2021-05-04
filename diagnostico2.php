@@ -33,7 +33,7 @@ require("navbar.php");
 <div class="jumbotron jumbotron-fluid bg-error mb-3">
   <div class="container">
     <center><h1>DIAGNÓSTICO UNIDAD 2</h1></center><br>
-	<form method="POST" action="examen1.php">
+	<form method="POST" action="examen2.php">
   <div class="form-group">
   	<input type="hidden" name="user" value=<?php echo $_SESSION['id']?>>
   	<div class="form-group col-md-6">

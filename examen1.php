@@ -36,7 +36,7 @@ require("connect_db.php");
 
 
 	
-mysqli_query($mysqli,"INSERT INTO diagnostico1 VALUES('',current_date,'$id_user','$pregunta1','$pregunta2','$pregunta3_1','$pregunta3_2','$pregunta3_3','$pregunta3_4','$pregunta4','$pregunta5','$pregunta6_1','$pregunta_6_2','$pregunta6_3','$pregunta6_4','$pregunta6_5','$pregunta6_6','$pregunta6_7','$pregunta6_8','$pregunta6_9','$pregunta6_10','$pregunta6_11','$pregunta6_12','$pregunta7','$pregunta8','$pregunta9','$pregunta10','$pregunta11','$pregunta12')");
+mysqli_query($mysqli,"INSERT INTO diagnostico1 VALUES('',current_date,'$id_user','$pregunta1','$pregunta2','$pregunta3_1','$pregunta3_2','$pregunta3_3','$pregunta3_4','$pregunta4','$pregunta5','$pregunta6_1','$pregunta6_2','$pregunta6_3','$pregunta6_4','$pregunta6_5','$pregunta6_6','$pregunta6_7','$pregunta6_8','$pregunta6_9','$pregunta6_10','$pregunta6_11','$pregunta6_12','$pregunta7','$pregunta8','$pregunta9','$pregunta10','$pregunta11','$pregunta12')");
 echo ' <script language="javascript">alert("Respuestas enviadas con exito");</script> ';
 echo "<script>location.href='curso.php'</script>";
 	
