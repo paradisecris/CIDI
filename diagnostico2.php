@@ -26,7 +26,6 @@ require("navbar.php");
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
 <title>Diagnostico 2</title></head>
 <body >
-
   <br>
   <br>
   <br> 	
@@ -121,7 +120,7 @@ require("navbar.php");
         <label><input type="checkbox" name="pregunta12_2" value="Es parte de los procesos de socialización"> Es parte de los procesos de socialización</label><br>
         <label><input type="checkbox" name="pregunta12_3" value="Común entre niños, niñas, niñes y adolescentes"> Común entre niños, niñas, niñes y adolescentes</label><br>
         <label><input type="checkbox" name="pregunta12_4" value="Es repetitivo"> Es repetitivo</label><br>
-        <label><input type="checkbox" name="pregunta12_5" value="Produce un desequilibrio del poder"> Produce un desequilibrio del poder</label><br>
+        <label><input type="checkbox" name="pregunta12_5" value="Produce desequilibrio del poder"> Produce desequilibrio del poder</label><br>
         <label><input type="checkbox" name="pregunta12_6" value="Es causa de una provocación"> Es causa de una provocación</label><br>
         <label><input type="checkbox" name="pregunta12_7" value="No necesita provocación"> No necesita provocación</label><br>
         <label><input type="checkbox" name="pregunta12_8" value="Genera intimidación"> Genera intimidación</label><br>

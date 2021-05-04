@@ -14,10 +14,10 @@ require("connect_db.php");
 	$pregunta9=$_POST['pregunta9'];
 	$pregunta10=$_POST['pregunta10'];
 	$pregunta11=$_POST['pregunta11'];
-	$pregunta12_1=$_POST['pregunta12_1'];
+	$pregunta12_1=$_POST['pregunta12_1']; 
 	$pregunta12_2=$_POST['pregunta12_2'];
 	$pregunta12_3=$_POST['pregunta12_3'];
-	$pregunta12_4=$_POST['pregunta_12_4'];
+	$pregunta12_4=$_POST['pregunta12_4'];
 	$pregunta12_5=$_POST['pregunta12_5'];
 	$pregunta12_6=$_POST['pregunta12_6'];
 	$pregunta12_7=$_POST['pregunta12_7'];
@@ -28,13 +28,17 @@ require("connect_db.php");
 	
 
 
+$pregunta12 = array("$pregunta12_1","$pregunta12_2","$pregunta12_3","$pregunta12_4","$pregunta12_5","$pregunta12_6","$pregunta12_7","$pregunta12_8","$pregunta12_9");
 
-
+$res = implode("/", $pregunta12);
 
 
 	
-mysqli_query($mysqli,"INSERT INTO diagnostico2 VALUES('',current_date,'$id_user','$pregunta1','$pregunta2','$pregunta3','$pregunta4','$pregunta5','$pregunta6','$pregunta7','$pregunta8','$pregunta9','$pregunta10','$pregunta11','$pregunta12_1','$pregunta12_2','$pregunta12_3','$pregunta12_4','$pregunta12_5','$pregunta12_6','$pregunta12_7','$pregunta12_8','$pregunta12_9','$pregunta13','$pregunta13_1')");
+mysqli_query($mysqli,"INSERT INTO diagnostico2 VALUES('',current_timestamp(),'$id_user','$pregunta1','$pregunta2','$pregunta3','$pregunta4','$pregunta5','$pregunta6','$pregunta7','$pregunta8','$pregunta9','$pregunta10','$pregunta11','$res','$pregunta13','$pregunta13_1','0')");
+
 echo ' <script language="javascript">alert("Respuestas enviadas con exito");</script> ';
 echo "<script>location.href='curso.php'</script>";
 	
+
 ?>
+
